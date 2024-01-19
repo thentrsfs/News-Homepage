@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'YourCustomFont', 'Inter-VariableFont';
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 2rem;
+    height: 40rem;
+}
+
+.main-div {
+    height: 90vh;
+    width: 74%;
+    margin: 3rem 10rem 0 10rem;
+}
+
+.first-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.second-div {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    width: 30rem;
+    height: 35rem;
+}
+
+img {
+    grid-column: span 2;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+    color: hsl(236, 13%, 42%);
+}
+
+#navbar li {
+    flex: 1;
+}
+
+#navbar svg {
+    flex: 8;
+}
+
+header {
+    width: 96%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-wrap: balance;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+.p-div {
+    margin-top: 3rem;
+}
+
+.grey-text {
+    color: hsl(236, 13%, 42%);
+}
+
+.p-div button {
+    padding: 0.9em;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    border: none;
+    width: 10rem;
+    margin-top: 5em;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+}
+
+.grey {
+    color: hsl(233, 8%, 79%);
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+hr {
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.second-div h2 {
+    font-size: 36px;
+    color: hsl(35, 77%, 62%);
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.second-div h3 {
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.mini-container {
+    display: flex;
+    width: 29rem;
+    flex-shrink: 2;
+    margin-top: 1rem;
+}
+
+
+footer {
+    display: flex;
+    /* flex-wrap: wrap; */
+
+
+}
+
+footer img {
+    height: 9rem;
+}
+
+
+footer div p {
+    width: 15rem;
+    margin-top: 1.7rem;
+
+}
+
+.mini-container div {
+    margin-left: 2rem;
+
+}
+
+
+footer h2 {
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 1.3rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1118px) {
+
+    h1,
+    .p-div {
+        margin-top: -2rem;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .p-div button {
+        margin-top: 1rem
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+
+    .mobile-nav,
+    .mobile-menu-div,
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 100vh;
+
+    }
+
+    .second-div h2 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 80rem;
+        align-items: center;
+        width: 100px;
+    }
+
+    .first-div {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 18rem;
+    }
+
+    .second-div {
+        height: 50rem;
+        width: 18rem;
+    }
+
+    footer {
+        height: 35rem;
+        text-wrap: wrap;
+        margin-left: -6.9rem;
+    }
+
+    footer div p {
+        width: 160px;
+        margin-top: 0.7rem;
+        font-size: smaller;
+    }
+
+    footer h2 {
+        margin-bottom: 0.4rem;
+    }
+
+    footer h3 {
+        width: 10rem;
+    }
+
+    footer img {
+        margin-left: 1rem;
+    }
+
+    .mini-container div {
+        margin-left: 1rem;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-left: -6rem;
+        margin-bottom: -2rem;
+
+    }
+
+    .bar {
+        display: inline-block;
+        margin-left: 9.7rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    #navbar {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .navbut svg {
+        margin: 0;
+    }
+
+    .navbut {
+        width: 60px;
+        margin-left: 8.9rem;
+        background-color: white;
+        border: none;
+    }
+
+    .mobile-menu-div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        height: 130rem;
+        width: 18rem;
+    }
+
+    .mobile-menu ul {
+        height: 40rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile-menu li {
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-size: 20px;
+    }
+
+    .mobile-menu-div svg {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+
+    #ix {
+        cursor: pointer;
+    }
+}
